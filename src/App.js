@@ -12,6 +12,7 @@ import {
 import Review from './components/Review/Review';
 import Manage from "./components/Manage/Manage";
 import Error from "./components/Error/Error";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/review" element={ <Review/> }/>
         <Route path="/manage" element={ <Manage></Manage> }/>
         <Route exact path="/" element={<Shops/>}/>
+        <Route  path="/product/:productKey" element={<ProductDetail/>}/>
         <Route path="*" element={<Error/>}/>
         </Routes>
       
